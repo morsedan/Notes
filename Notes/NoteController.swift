@@ -10,6 +10,12 @@ import Foundation
 
 class NoteController {
     
+    init() {
+        // Create test data
+        createNote(withText: "Walk the dog")
+        createNote(withText: "Eat!")
+    }
+    
     func createNote(withText text: String) {
         let note = Note(text: text)
         

@@ -11,7 +11,7 @@ import UIKit
 class NoteTableViewCell: UITableViewCell {
 
     @IBAction func shareButtonPressed(_ sender: Any) {
-        print("Share Pressed")
+        print("Share")
     }
     
 

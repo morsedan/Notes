@@ -19,7 +19,7 @@ class NotesViewController: UIViewController {
     
 
     @IBAction func saveButtonPressed(_ sender: Any) {
-        print("Hi")
+        print("Save")
     }
     /*
     // MARK: - Navigation
@@ -48,17 +48,13 @@ extension NotesViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "NoteCell", for: indexPath)
+        
+        guard let noteCell = cell as? NoteTableViewCell else { return cell }
 
         // Get the note for row
         
         let note = noteController.notes[indexPath.row]
         
-//        cell.backgroundColor = .yellow
-        
-        
-        
         return cell
     }
-    
-    
 }
