@@ -88,6 +88,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="noteLabel" destination="gNU-cM-iNa" id="uWe-kM-Npn"/>
+                                            <segue destination="ib3-8a-SpR" kind="show" identifier="NoteDetail" id="4ZA-Fc-EvC"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -111,6 +112,39 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="137.94642857142856"/>
+        </scene>
+        <!--Note Detail View Controller-->
+        <scene sceneID="JhM-2c-MWK">
+            <objects>
+                <viewController id="ib3-8a-SpR" customClass="NoteDetailViewController" customModule="Notes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jde-j7-4ng">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="SHi-jc-keG">
+                                <rect key="frame" x="16" y="140" width="382" height="722"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="SHi-jc-keG" firstAttribute="leading" secondItem="lt9-0s-CbW" secondAttribute="leading" constant="16" id="Utu-Fx-m6I"/>
+                            <constraint firstItem="SHi-jc-keG" firstAttribute="top" secondItem="lt9-0s-CbW" secondAttribute="top" id="c8v-E3-Xl2"/>
+                            <constraint firstItem="lt9-0s-CbW" firstAttribute="trailing" secondItem="SHi-jc-keG" secondAttribute="trailing" constant="16" id="hIq-SD-X5L"/>
+                            <constraint firstItem="lt9-0s-CbW" firstAttribute="bottom" secondItem="SHi-jc-keG" secondAttribute="bottom" id="oeg-AU-Oaa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lt9-0s-CbW"/>
+                    </view>
+                    <connections>
+                        <outlet property="noteTextView" destination="SHi-jc-keG" id="DBF-Uv-3lU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JXr-iZ-qT8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1738" y="137"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="2Z7-Cf-FRD">
