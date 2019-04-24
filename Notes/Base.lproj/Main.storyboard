@@ -53,7 +53,7 @@
                                     </constraints>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NoteCell" id="Sek-og-YMM">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NoteCell" id="Sek-og-YMM" customClass="NoteTableViewCell" customModule="Notes" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="199" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Sek-og-YMM" id="3y8-YG-u2i">
@@ -72,6 +72,9 @@
                                                         <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Yh-yE-Ik7">
                                                             <rect key="frame" x="334" y="0.0" width="40" height="22"/>
                                                             <state key="normal" title="Share"/>
+                                                            <connections>
+                                                                <action selector="shareButtonPressed:" destination="Sek-og-YMM" eventType="touchUpInside" id="GRj-Dn-4NL"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                 </stackView>
@@ -83,6 +86,9 @@
                                                 <constraint firstItem="MBe-nS-J3L" firstAttribute="leading" secondItem="3y8-YG-u2i" secondAttribute="leadingMargin" id="eCX-cy-3F6"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="noteLabel" destination="gNU-cM-iNa" id="uWe-kM-Npn"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

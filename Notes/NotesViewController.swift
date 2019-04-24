@@ -30,6 +30,8 @@ class NotesViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    let noteController = NoteController()
+    
     @IBOutlet weak var tableView: UITableView!
     
 }
@@ -40,14 +42,20 @@ extension NotesViewController: UITableViewDelegate {
 
 extension NotesViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return noteController.notes.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "NoteCell", for: indexPath)
+
+        // Get the note for row
         
-        cell.backgroundColor = .yellow
+        let note = noteController.notes[indexPath.row]
+        
+//        cell.backgroundColor = .yellow
+        
+        
         
         return cell
     }

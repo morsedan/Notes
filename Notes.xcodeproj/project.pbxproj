@@ -14,6 +14,7 @@
 		C0206DD92270D220003253B2 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0206DD82270D220003253B2 /* NotesViewController.swift */; };
 		C0A541822270D88E000516DB /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A541812270D88E000516DB /* Note.swift */; };
 		C0A541842270D8CF000516DB /* NoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A541832270D8CF000516DB /* NoteController.swift */; };
+		C0A541862270DA37000516DB /* NoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A541852270DA37000516DB /* NoteTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		C0206DD82270D220003253B2 /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
 		C0A541812270D88E000516DB /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		C0A541832270D8CF000516DB /* NoteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteController.swift; sourceTree = "<group>"; };
+		C0A541852270DA37000516DB /* NoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +61,11 @@
 			isa = PBXGroup;
 			children = (
 				C0206DC62270C2DA003253B2 /* AppDelegate.swift */,
-				C0206DCA2270C2DA003253B2 /* Main.storyboard */,
 				C0A541812270D88E000516DB /* Note.swift */,
 				C0A541832270D8CF000516DB /* NoteController.swift */,
 				C0206DD82270D220003253B2 /* NotesViewController.swift */,
+				C0A541852270DA37000516DB /* NoteTableViewCell.swift */,
+				C0206DCA2270C2DA003253B2 /* Main.storyboard */,
 				C0206DCD2270C2DD003253B2 /* Assets.xcassets */,
 				C0206DCF2270C2DD003253B2 /* LaunchScreen.storyboard */,
 				C0206DD22270C2DD003253B2 /* Info.plist */,
@@ -144,6 +147,7 @@
 				C0206DD92270D220003253B2 /* NotesViewController.swift in Sources */,
 				C0A541842270D8CF000516DB /* NoteController.swift in Sources */,
 				C0206DC72270C2DA003253B2 /* AppDelegate.swift in Sources */,
+				C0A541862270DA37000516DB /* NoteTableViewCell.swift in Sources */,
 				C0A541822270D88E000516DB /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
